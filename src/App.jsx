@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import AddTodo from "./components/AddTodo/AddTodo";
 import TodoList from "./components/TodoList/TodoList";
@@ -33,10 +33,7 @@ function App() {
 						])
 					}
 				/>
-				<TodoList
-					list={list}
-					updateList={setList}
-				/>
+				<TodoList />
 			</div>
 		</TodoContext.Provider>
 	);
